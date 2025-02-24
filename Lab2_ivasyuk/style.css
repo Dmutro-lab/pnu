@@ -1,0 +1,46 @@
+/* Загальні стилі для всіх таблиць */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Стилізація заголовків таблиць */
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+/* Змінний фон для рядків */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Стилі для комірок */
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Анімація при наведенні */
+tr:hover {
+    background-color: #ddd;
+    transition: 0.3s;
+}
+
+/* Додаткові стилі для конкретних таблиць */
+.table1 {
+    border: 3px solid #8e44ad;
+}
+
+.table2 {
+    border: 3px solid #3498db;
+}
