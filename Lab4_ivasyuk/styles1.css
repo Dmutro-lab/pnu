@@ -1,11 +1,11 @@
-/* Селектор типу */
+
 h2 { 
     font-size: 16pt; 
     color: #0033FF; 
     font-family: Geneva, Arial;
 }
 
-/* Селектор класу */
+
 h2.curs {
     font-size: 18pt; 
     font-style: italic; 
@@ -19,7 +19,7 @@ h2.normal {
     color: #FF0000;
 }
 
-/* Селектори ID */
+
 #bgmagenta {
     text-indent: 20px;
     background-color: #1166FF; 
@@ -40,7 +40,7 @@ h2.normal {
     font-family: Verdana, Arial;
 }
 
-/* Стилі для div */
+
 div {
     position: absolute;
     width: 150px;
@@ -50,7 +50,7 @@ div {
     font-size: 15pt;
 }
 
-/* Стилі для класу text */
+
 div.text {
     position: absolute;
     font-family: serif; 
@@ -63,7 +63,7 @@ div.text {
     padding: 20px;
 }
 
-/* Блоки */
+
 #first {
     top: 850px;
     left: 50px;
