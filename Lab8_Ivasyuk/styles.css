@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    background-color: #ffcc00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 10%;
+}
+
+.title-block {
+    background-color: white;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 350px;
+    text-align: center;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr;
+    height: 80%;
+    gap: 10px;
+}
+
+.block {
+    text-align: justify;
+    font-size: 16px;
+    padding: 15px;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.block-2 {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+}
+
+.block-2 ul {
+    list-style: none;
+}
+
+.block-2 ul li {
+    padding: 10px 0;
+}
+
+.block-2 ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.block-3, .block-5 {
+    background-color: red;
+    color: white;
+    overflow-y: scroll;
+}
+
+.block-4 {
+    background-color: white;
+    color: black;
+    overflow-y: scroll;
+}
+
+.footer {
+    background-color: #ffcc00;
+    text-align: center;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+/* Адаптивний стиль для смартфонів */
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .block-2 {
+        display: none; /* Ховаємо меню */
+    }
+
+    .block {
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
+
+/* Стилі для друку */
+@media print {
+    body {
+        background: white;
+    }
+
+    .block-2, .footer {
+        display: none; /* Прибираємо меню та підвал */
+    }
+
+    .block {
+        color: black;
+        background: none;
+        border: 1px solid black;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    background-color: #ffcc00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 10%;
+}
+
+.title-block {
+    background-color: white;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 350px;
+    text-align: center;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr;
+    height: 80%;
+    gap: 10px;
+}
+
+.block {
+    text-align: justify;
+    font-size: 16px;
+    padding: 15px;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.block-2 {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+}
+
+.block-2 ul {
+    list-style: none;
+}
+
+.block-2 ul li {
+    padding: 10px 0;
+}
+
+.block-2 ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.block-3, .block-5 {
+    background-color: red;
+    color: white;
+    overflow-y: scroll;
+}
+
+.block-4 {
+    background-color: white;
+    color: black;
+    overflow-y: scroll;
+}
+
+.footer {
+    background-color: #ffcc00;
+    text-align: center;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+/* Адаптивний стиль для смартфонів */
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .block-2 {
+        display: none; /* Ховаємо меню */
+    }
+
+    .block {
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
+
+/* Стилі для друку */
+@media print {
+    body {
+        background: white;
+    }
+
+    .block-2, .footer {
+        display: none; /* Прибираємо меню та підвал */
+    }
+
+    .block {
+        color: black;
+        background: none;
+        border: 1px solid black;
+    }
+}

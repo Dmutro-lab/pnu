@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    background-color: #ffcc00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 10%;
+}
+
+.title-block {
+    background-color: white;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: calc(100px + 15vw); /* Використання calc() */
+    text-align: center;
+    max-height: 100%;
+}
+
+.title-block::after {
+    content: attr(data-text); /* Використання attr() */
+}
+
+/* --- Основний контент (Flexbox) --- */
+.content {
+    display: flex;
+    flex: 1;
+    height: 80%;
+}
+
+.block {
+    text-align: justify;
+    font-size: 16px;
+    padding: 15px;
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.block-2 {
+    background-color: blue;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-2 ul {
+    list-style: none;
+    width: 100%;
+}
+
+.block-2 ul li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.block-2 ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.block-3, .block-5 {
+    background-color: red;
+    color: white;
+    flex: 1;
+}
+
+.block-4 {
+    background-color: white;
+    color: black;
+    flex: 2;
+}
+
+/* --- Футер --- */
+.footer {
+    background-color: #ffcc00;
+    text-align: center;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-top: auto;
+}
+
+/* --- Адаптивність (смартфони) --- */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .block-2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .block-3, .block-4, .block-5 {
+        width: 100%;
+    }
+}
+
+/* --- Стилі для друку --- */
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+    }
+
+    .header, .footer, .block-2 {
+        display: none; /* Ховаємо зайві блоки */
+    }
+
+    .block {
+        border: 1px solid black;
+        background: white !important;
+        color: black !important;
+    }
+
+    h1, h2, h3 {
+        font-weight: bold;
+    }
+}
+
+/* --- Підключення локального шрифту через @font-face --- */
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('myfont.woff2') format('woff2'),
+         url('myfont.woff') format('woff'),
+         url('myfont.ttf') format('truetype');
+}
+
+.block-3 {
+    font-family: 'MyWebFont', sans-serif;
+}

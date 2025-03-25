@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+fieldset {
+    margin: 20px;
+    padding: 10px;
+}
+
+label, input, textarea, select {
+    display: block;
+    margin-bottom: 10px;
+}

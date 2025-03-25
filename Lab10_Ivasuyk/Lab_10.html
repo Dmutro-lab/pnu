@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Інтернет-магазин жіночого одягу. Нові колекції, трендові сукні, костюми та аксесуари">
+    <title>Інтернет-магазин жіночого одягу</title>
+    <link rel="icon" href="favicon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">FashionShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Головна</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Колекції</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Категорії</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Сукні</a></li>
+                            <li><a class="dropdown-item" href="#">Костюми</a></li>
+                            <li><a class="dropdown-item" href="#">Аксесуари</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="banner1.jpg" class="d-block w-100" alt="Нова колекція">
+            </div>
+            <div class="carousel-item">
+                <img src="banner2.jpg" class="d-block w-100" alt="Знижки до 50%">
+            </div>
+            <div class="carousel-item">
+                <img src="banner3.jpg" class="d-block w-100" alt="Весняний стиль">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Стильні сукні</h2>
+                <p>Відкрийте для себе найкращі моделі сезону.</p>
+                <button class="btn btn-primary">Дізнатися більше</button>
+            </div>
+            <div class="col-md-6">
+                <h2>Елегантні костюми</h2>
+                <p>Оновіть гардероб разом з нами!</p>
+                <button class="btn btn-success">Переглянути</button>
+            </div>
+            <div class="col-md-2">
+                <h2>Аксесуари</h2>
+                <p>Додайте завершальні штрихи до образу.</p>
+                <button class="btn btn-warning">Купити</button>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="dress.jpg" class="card-img-top" alt="Сукня">
+                    <div class="card-body">
+                        <h5 class="card-title">Рожева сукня</h5>
+                        <p class="card-text">Ніжний стиль для будь-якої події.</p>
+                        <button class="btn btn-primary">Детальніше</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="suit.jpg" class="card-img-top" alt="Костюм">
+                    <div class="card-body">
+                        <h5 class="card-title">Класичний костюм</h5>
+                        <p class="card-text">Ідеальний вибір для офісу.</p>
+                        <button class="btn btn-primary">Детальніше</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="accessory.jpg" class="card-img-top" alt="Аксесуар">
+                    <div class="card-body">
+                        <h5 class="card-title">Сережки</h5>
+                        <p class="card-text">Стильні аксесуари на будь-який смак.</p>
+                        <button class="btn btn-primary">Детальніше</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="container my-4">
+        <h2>Отримуйте новини та акції</h2>
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Введіть вашу електронну пошту">
+            </div>
+            <button type="submit" class="btn btn-success">Підписатися</button>
+        </form>
+    </div>
+
+    
+    <footer class="bg-light py-3 mt-4">
+        <div class="container text-center">
+            <p>&copy; 2025 FashionShop. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+
+.text::before {
+    content: "🔹 Початок тексту: ";
+    color: blue;
+    font-weight: bold;
+}
+
+
+.text::after {
+    content: " 🔹 Кінець тексту.";
+    color: red;
+    font-weight: bold;
+}
+
+
+.text::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: darkblue;
+}
+
+
+.text::first-line {
+    color: green;
+    font-style: italic;
+    font-weight: bold;
+}
