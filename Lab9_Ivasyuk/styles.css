@@ -32,7 +32,7 @@ html, body {
     font-size: 24px;
     font-weight: bold;
     border-radius: 5px;
-    width: calc(100px + 15vw); 
+    width: calc(100px + 15vw); /* Використання calc() */
     text-align: center;
     max-height: 100%;
     overflow: auto;
@@ -43,7 +43,7 @@ html, body {
 
 }
 
-
+/* --- Основний контент (Flexbox) --- */
 .content {
     display: flex;
     flex: 1;
@@ -97,7 +97,7 @@ html, body {
     flex: 2;
 }
 
-
+/* --- Футер --- */
 .footer {
     background-color: #ffcc00;
     text-align: center;
@@ -109,7 +109,7 @@ html, body {
     margin-top: auto;
 }
 
-
+/* --- Адаптивність (смартфони) --- */
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -125,7 +125,7 @@ html, body {
     }
 }
 
-
+/* --- Стилі для друку --- */
 @media print {
     body {
         background: white !important;
@@ -133,7 +133,7 @@ html, body {
     }
 
     .header, .footer, .block-2 {
-        display: none;
+        display: none; /* Ховаємо зайві блоки */
     }
 
     .block {
@@ -147,7 +147,7 @@ html, body {
     }
 }
 
-
+/* --- Підключення локального шрифту через @font-face --- */
 @font-face {
     font-family: 'MyWebFont';
     src: url('myfont.woff2') format('woff2'),
