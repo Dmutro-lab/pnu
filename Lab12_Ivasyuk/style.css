@@ -42,7 +42,7 @@ body {
   
 }
 
-.search-cart input {
+.search-cart  {
   padding: 4px 8px;
   margin-right: 10px;
 }
@@ -318,7 +318,9 @@ h1 {
     grid-template-columns: 1fr;
     padding: 15px 20px;
   }
-
+.search-cart{
+  display: none;
+}
   .container {
     grid-template-columns: 1fr;
   }
