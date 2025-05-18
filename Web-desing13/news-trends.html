@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <title>Новини та тренди</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo">
+            <a href="index.html" class="header__logo-link">
+              <img src="logo.png" alt="logo"
+            /></a>
+          </div>
+          <div class="header__menu menu" id="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="Web13.html" class="menu__link">Головна</a>
+              </li>
+              <li class="menu__item">
+                <a href="about.html" class="menu__link">Про мене</a>
+              </li>
+              <li class="menu__item">
+                <a href="proffesion.html" class="menu__link">Професія</a>
+              </li>
+              <li class="menu__item">
+                <a href="news-trends.html" class="menu__link">Новини IT</a>
+              </li>
+
+              <li class="menu__item">
+                <a href="contacts.html" class="menu__link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <div class="menu__search">
+            <input
+              type="text"
+              maxlength="12"
+              class="searchbar"
+              placeholder="type"
+            />
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png"
+              alt="search icon"
+              class="button"
+            />
+          </div>
+        </div>
+      </header>
+      <div class="popup" id="popup"></div>
+      <section class="page__news news">
+        <div class="news__container">
+          <div class="news__tittle tittle">
+            <h2 class="tittle__text">Новини</h2>
+            <div class="tittle__underline"></div>
+          </div>
+          <div class="news__group group-news">
+            <div class="group-news__big-item news-item--big">
+              <img
+                src="chatgpt5.png"
+                alt=""
+                class="news-item__image--big"
+              />
+              <h3 class="news-item__tittle--big">
+               ChatGPT-5: нові можливості та етичні виклики
+              </h3>
+              <p class="news-item__text--big">
+               Відкриття ChatGPT-5 обіцяє революцію в AI, але разом із цим виникають питання безпеки даних. 
+               Експерти обговорюють, як уникнути зловживань технологією.
+              </p>
+            </div>
+            <div class="group-news__small-items">
+              <div class="group-news__small-item news-item">
+                <img
+                  src="Microsoft .png"
+                  alt="news-image"
+                  class="news-item__image"
+                />
+                <h3 class="news-item__tittle">
+                 Microsoft інтегрує AI у Windows 12
+                </h3>
+                <p class="news-item__text">
+                  Нова ОС матиме вбудований штучний інтелект для автоматизації задач.
+                   Очікується, що це змінить підхід до роботи з ПК.
+                </p>
+              </div>
+              <div class="group-news__small-item news-item">
+                <img
+                  src="imege2.png"
+                  alt="news-image"
+                  class="news-item__image"
+                />
+                <h3 class="news-item__tittle">
+                Україна у топ-5 країн з найшвидшим зростанням IT-ринку
+                </h3>
+                <p class="news-item__text">
+                  За данами DOU, кількість IT-фахівців в Україні до 2025 року зросте на 30%.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__planed-events planed-events">
+        <div class="planed-events__container">
+          <div class="planed-events__tittle tittle">
+            <h2 class="tittle__text">Заплановані події</h2>
+            <div class="tittle__underline"></div>
+          </div>
+          <div class="planed-events__events events">
+            <div class="events__item item-event">
+              <img
+                src="Games1.jpg"
+                alt="event-image"
+                class="item-event__image"
+              />
+              <div class="item-event__content">
+                <h3 class="item-event__tittle">Games Gathering 2025 Lviv</h3>
+                <div class="item-event__data">
+                  <img
+                    src="time.svg"
+                    alt="time-icon"
+                    class="item-event__data-icon"
+                  />03.04.2025  11:00-18:00
+                </div>
+                <p class="item-event__text">
+                  Games Gathering 2025 Lviv - це масштабна подія для розробників ігор, паблішерів, інвесторів та всіх, хто захоплений індустрією геймдева.
+                   Тут зустрічаються провідні професіонали, молоді таланти та компанії, щоб ділитися знаннями, знаходити нових партнерів та надихатися на створення майбутніх хітів.
+                </p>
+              </div>
+            </div>
+            <div class="events__item item-event">
+              <img
+                src="javascript.jpg"
+                alt="event-image"
+                class="item-event__image"
+              />
+              <div class="item-event__content">
+                <h3 class="item-event__tittle">JavaScript fwdays’25 conference</h3>
+                <div class="item-event__data">
+                  <img
+                    src="time.svg"
+                    alt="time-icon"
+                    class="item-event__data-icon"
+                  />24.05.2025 16:00
+                </div>
+                <p class="item-event__text">
+                 JavaScript fwdays’25 conference — 15-та технічна конференція, яка присвячена JS, від команди Fwdays.
+                Поговоримо про JS фреймворки, інструменти, performance та екосистему JavaScript розробки.
+                </p>
+              </div>
+            </div>
+            <div class="events__item item-event">
+              <img
+                src="it-summit-2025.jpg"
+                alt="event-image"
+                class="item-event__image"
+              />
+              <div class="item-event__content">
+                <h3 class="item-event__tittle">Fwdays IT Summit</h3>
+                <div class="item-event__data">
+                  <img
+                    src="time.svg"
+                    alt="time-icon"
+                    class="item-event__data-icon"
+                  />26.04.2025  9:15- 17:10
+                </div>
+                <p class="item-event__text">
+                 Fwdays IT Summit — конференція від Fwdays, присвячена маркетингу, 
+                 продажам і зростанню продуктових та аутсорсингових IT-компаній.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__container">
+          <img class="footer__logo" src="logo-right.svg" alt="logo" />
+          <div class="footer__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="Web13.html" class="menu__link">Головна</a>
+              </li>
+              <li class="menu__item">
+                <a href="about.html" class="menu__link">Про мене</a>
+              </li>
+              <li class="menu__item">
+                <a href="proffesion.html" class="menu__link">Професія</a>
+              </li>
+              <li class="menu__item">
+                <a href="news-trends.html" class="menu__link">Новини IT</a>
+              </li>
+
+              <li class="menu__item">
+                <a href="contacts.html" class="menu__link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__network-icons network-icons">
+            <a
+              href="https://www.youtube.com/watch?v=RGtPR1rHXh4"
+              class="network-icons__link"
+            >
+              <div class="network-icons__icon">
+                <img
+                  src="icon-youtube.svg"
+                  alt="icon-youtube"
+                  class="network-icons__vector"
+                /></div
+            ></a>
+            <a href="https://discord.gg/Jj2D3MPu" class="network-icons__link">
+              <div class="network-icons__icon">
+                <img
+                  src="discord-fill.png"
+                  alt="icon-discord"
+                  class="network-icons__vector"
+                /></div
+            ></a>
+            <a
+              href="https://www.instagram.com/dima_.ivasyuk?igsh=N2x5ZDQyd2V6bGtr"
+              class="network-icons__link"
+            >
+              <div class="network-icons__icon">
+                <img
+                  src="icon-instagram.png"
+                  alt="icon-instagram"
+                  class="network-icons__vector"
+                /></div></a
+            ><a
+              href="https://t.me/Dmutro7"
+              class="network-icons__link"
+            >
+              <div class="network-icons__icon">
+                <img
+                  src="telegram-line.png"
+                  alt="icon-telegram"
+                  class="network-icons__vector"
+                /></div
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
